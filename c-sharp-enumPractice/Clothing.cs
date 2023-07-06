@@ -17,6 +17,33 @@ namespace c_sharp_enumPractice
     */
     internal class Clothing
     {
+        public static void colthSizing()
+        {
+            Console.WriteLine("enter your size");
+            string size = Console.ReadLine();
+            ClothingSize s = (ClothingSize)Enum.Parse(typeof(ClothingSize), size);//convert from enum type to string 
+
+            switch (s)
+            {
+                case ClothingSize.SMALL:
+                    Console.WriteLine("your size is:34-36");
+                    break;
+                case ClothingSize.MEDIUM:
+                    Console.WriteLine("your size is:38");
+                    break;
+                case ClothingSize.LARGE:
+                    Console.WriteLine("your size is:40-42");
+                    break;
+                case ClothingSize.EXTRALARGE:
+                    Console.WriteLine("your size is:44");
+                    break;
+                default:
+                    Console.WriteLine("you have entered invalid input");
+                    break;
+
+
+            }
+        }
     }
 
     enum ClothingSize
