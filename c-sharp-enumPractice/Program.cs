@@ -71,6 +71,31 @@ internal class Program
 
         }
 
+        Console.WriteLine("enter color");
+        string color = Console.ReadLine();
+        FavoriteColor c = (FavoriteColor)Enum.Parse(typeof(FavoriteColor), size);
+
+        if (c.Equals(FavoriteColor.YELLOW))
+        {
+            Console.WriteLine("Confirming the Favorite Color");
+
+        }
+        else if(c.Equals(FavoriteColor.GREEN))
+        {
+            Console.WriteLine("Confirming the Favorite Color");
+
+        }
+        else if (c.Equals(FavoriteColor.BLUE))
+        {
+            Console.WriteLine("Confirming the Favorite Color");
+
+        }
+        else if (c.Equals(FavoriteColor.RED))
+        {
+            Console.WriteLine("Confirming the Favorite Color");
+
+        }
+        else { Console.WriteLine("not a valid favorite color"); }
 
     }
 }

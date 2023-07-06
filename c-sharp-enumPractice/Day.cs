@@ -17,7 +17,7 @@ namespace c_sharp_enumPractice
 
         
 
-        public Day() { }
+     
        
         
     }
