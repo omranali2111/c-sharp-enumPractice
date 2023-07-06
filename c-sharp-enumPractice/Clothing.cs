@@ -21,8 +21,8 @@ namespace c_sharp_enumPractice
         {
             Console.WriteLine("enter your size");
             string size = Console.ReadLine();
-            ClothingSize s = (ClothingSize)Enum.Parse(typeof(ClothingSize), size);//convert from enum type to string 
-
+            ClothingSize s = (ClothingSize)Enum.Parse(typeof(ClothingSize), size.ToUpper());//convert from enum type to string 
+            //ToUpper() convert the input to upper case
             switch (s)
             {
                 case ClothingSize.SMALL:

@@ -9,18 +9,16 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-       // Day.weekDays();
-        //Clothing.colthSizing();
+        // Day.weekDays();
+       // Clothing.colthSizing();
         //Color.favColor();
-        Int.inte();
+        //Int.inte();
+        Traffic.trafficEnum();
 
     }
 
    
 }
-       
 
-        
-       
-       
+
 
